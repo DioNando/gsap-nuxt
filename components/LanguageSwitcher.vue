@@ -1,14 +1,14 @@
 <template>
-  <div class="dropdown dropdown-end">
+  <div class="dropdown">
     <div
       tabindex="0"
       role="button"
-      class="btn btn-ghost rounded-full text-primary"
+      class="btn btn-outline btn-square text-gray-400"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="1rem"
-        height="1rem"
+        width="1.5rem"
+        height="1.5rem"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -25,7 +25,7 @@
         >
           文
         </text>      </svg>
-      {{ t("language.current") }}
+     <span class="hidden"> {{ t("language.current") }}</span>
     </div>
     <ul
       tabindex="0"

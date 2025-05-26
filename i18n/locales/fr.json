@@ -36,6 +36,10 @@
     "welcome": "Bienvenue sur votre tableau de bord"
   },
   "copyright": "Copyright © {year} - Tous droits réservés",
+  "footer": {
+    "made_with": "Fait avec",
+    "copyright": "{year} © Dio_Nando"
+  },
   "homepage": {
     "title": "DaisyUI + GSAP + Nuxt",
     "hero": {

@@ -36,6 +36,10 @@
     "welcome": "Welcome to your dashboard"
   },
   "copyright": "Copyright © {year} - All rights reserved",
+  "footer": {
+    "made_with": "Made with",
+    "copyright": "{year} © Dio_Nando"
+  },
   "homepage": {
     "title": "DaisyUI + GSAP + Nuxt",
     "hero": {

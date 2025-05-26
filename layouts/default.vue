@@ -28,7 +28,7 @@
       <div class="navbar-end flex items-center gap-3">
         <LanguageSwitcher />
         <!-- <ThemeToggler /> -->
-        <button class="btn btn-ghost" @click="signOut">
+        <button class="btn btn-neutral rounded-full" @click="signOut">
           <Icon name="majesticons:logout-half-circle" size="1rem" />
           {{ t("sign_out") }}
         </button>
@@ -39,7 +39,15 @@
     </main>
     <footer class="footer footer-center p-4 bg-base-300 text-base-content">
       <aside>
-        <p>{{ t("copyright", { year: new Date().getFullYear() }) }}</p>
+        <p class="flex items-center">
+          {{ t("footer.made_with") }}
+          <Icon
+            name="majesticons:heart"
+            size="1.25rem"
+            class="ml-1 text-primary"
+          />
+        </p>
+        <p>{{ t("footer.copyright", { year: new Date().getFullYear() }) }}</p>
       </aside>
     </footer>
   </div>
