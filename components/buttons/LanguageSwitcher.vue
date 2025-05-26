@@ -1,5 +1,5 @@
 <template>
-  <div class="dropdown">
+  <div class="dropdown dropdown-end">
     <div
       tabindex="0"
       role="button"
@@ -24,8 +24,9 @@
           stroke="none"
         >
           文
-        </text>      </svg>
-     <span class="hidden"> {{ t("language.current") }}</span>
+        </text>
+      </svg>
+      <span class="hidden"> {{ t("language.current") }}</span>
     </div>
     <ul
       tabindex="0"

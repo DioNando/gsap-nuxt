@@ -1,24 +1,31 @@
 <template>
-  <div class="container mx-auto px-4 py-8">
-    <h1 class="text-4xl font-bold text-center mb-8">
+  <div class="container mx-auto px-4">
+    <!-- <h1 class="text-4xl font-bold text-center mb-8">
       {{ t("homepage.title") }}
-    </h1>
-    <div class="relative card shadow-lg rounded-box w-full bg-base-100 overflow-hidden">
-      <div class="p-3">
-        <IllustrationsSpotify />
-      </div>
-      <NuxtParticles
-        id="tsparticles"
-        :options="particles"
-        @load="onLoad"
-      ></NuxtParticles>
-      <NuxtParticles
-        id="alt-tsparticles"
-        :options="alt_particles"
-        @load="onLoad"
-      ></NuxtParticles>
-    </div>
+    </h1> -->
     <UiHero />
+    <a
+      href="https://open.spotify.com/intl-fr/track/2eAvDnpXP5W0cVtiI0PUxV?si=e2d34aa3a65e4e9d"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="block"
+    >
+      <div
+        class="relative card shadow-lg rounded-box w-full bg-base-100 overflow-hidden"
+      >
+        <IllustrationsSpotify />
+        <NuxtParticles
+          id="tsparticles"
+          :options="particles"
+          @load="onLoad"
+        ></NuxtParticles>
+        <NuxtParticles
+          id="alt-tsparticles"
+          :options="alt_particles"
+          @load="onLoad"
+        ></NuxtParticles>
+      </div>
+    </a>
     <UiCaroussel />
   </div>
 </template>

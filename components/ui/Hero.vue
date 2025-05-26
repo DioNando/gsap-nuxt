@@ -7,9 +7,6 @@
         <p class="py-6">
           {{ t("homepage.hero.description") }}
         </p>
-        <button class="btn btn-primary">
-          {{ t("homepage.hero.button") }}
-        </button>
       </div>
     </div>
   </div>
