@@ -24,9 +24,8 @@
           stroke="none"
         >
           文
-        </text>
-      </svg>
-      {{ t("language") }}
+        </text>      </svg>
+      {{ t("language.current") }}
     </div>
     <ul
       tabindex="0"

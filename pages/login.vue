@@ -1,23 +1,58 @@
 <template>
-  <div class="flex flex-col gap-4 items-center justify-center h-screen">
-    <ApplicationLogo :size="5" />
-    <h1 class="text-2xl">{{ t("welcome") }}</h1>
-    <section class="flex flex-col gap-6 w-full max-w-md">
-      <div class="flex flex-col w-full">
-        <fieldset class="fieldset">
-          <legend class="fieldset-legend">Email</legend>
-          <input type="email" v-model="email" class="input w-full" />
-          <p class="label text-error">{{ t(errorMsg) }}</p>
-        </fieldset>
-        <fieldset class="fieldset">
-          <legend class="fieldset-legend">Password</legend>
-          <input type="password" v-model="password" class="input w-full" />
-        </fieldset>
+  <div class="grid grid-cols-1 lg:grid-cols-3 p-4 lg:p-16">
+    <article class="relative py-4 col-span-2 flex items-center justify-center">
+      <NuxtParticles
+        id="tsparticles"
+        :options="particles"
+        @load="onLoad"
+      ></NuxtParticles>
+      <NuxtParticles
+        id="alt-tsparticles"
+        :options="alt_particles"
+        @load="onLoad"
+      ></NuxtParticles>
+      <div class="flex flex-col items-center justify-center">
+        <h1 class="text-accent text-5xl font-bold">{{ t("welcome") }}</h1>
+        <ApplicationLogo :size="10" />
+        <span class="text-secondary font-bold text-5xl">{{
+          applicationName
+        }}</span>
       </div>
-      <button @click="signIn" class="btn btn-primary">
-        {{ t("login.signin_with_email") }}
-      </button>
-    </section>
+    </article>
+    <article class="col-span-1">
+      <div class="card bg-base-100 shadow-xl">
+        <div class="card-body flex flex-col items-center gap-4">
+          <ApplicationLogo :size="5" />
+          <section class="flex flex-col gap-6 w-full">
+            <div class="flex flex-col w-full">
+              <fieldset class="fieldset">
+                <legend class="fieldset-legend">{{ t("login.email") }}</legend>
+                <div class="input w-full">
+                  <Icon
+                    name="majesticons:flower-2"
+                    class="h-[1em] opacity-50"
+                  />
+                  <input type="email" v-model="email" />
+                </div>
+                <p class="label text-error">{{ t(errorMsg) }}</p>
+              </fieldset>
+              <fieldset class="fieldset">
+                <legend class="fieldset-legend">
+                  {{ t("login.password") }}
+                </legend>
+                <div class="input w-full">
+                  <Icon name="majesticons:key" class="h-[1em] opacity-50" />
+                  <input type="password" v-model="password" />
+                </div>
+              </fieldset>
+            </div>
+            <button @click="signIn" class="btn btn-primary">
+              {{ t("login.signin_with_email") }}
+            </button>
+          </section>
+        </div>
+      </div>
+    </article>
   </div>
 </template>
 
@@ -25,6 +60,16 @@
 definePageMeta({
   layout: "guest",
 });
+
+import alt_particles from "~/data/alt-particlesjs-config.json";
+import particles from "~/data/particlesjs-config.json";
+
+const onLoad = (container: Container) => {
+  container.play();
+};
+
+const config = useRuntimeConfig();
+const applicationName = config.public.applicationName;
 
 const { t } = useI18n();
 const supabase = useSupabaseClient();
@@ -50,3 +95,12 @@ async function signIn() {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+#tsparticles,
+#alt-tsparticles {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+</style>

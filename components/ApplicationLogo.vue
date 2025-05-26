@@ -3,7 +3,7 @@
     <NuxtLink to="/" class="text-xl p-2 flex items-center gap-2">
       <Icon
         name="majesticons:flower-2"
-        class="logo text-primary"
+        class="logo text-secondary"
         :size="props.size + 'rem'"
       />
     </NuxtLink>
@@ -14,4 +14,7 @@
 const props = defineProps<{
   size?: number;
 }>();
+
+const config = useRuntimeConfig();
+const appName = config.public.appName;
 </script>

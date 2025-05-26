@@ -1,32 +1,29 @@
-<template>
-  <div class="container mx-auto px-4 py-8">
-    <h1 class="text-4xl font-bold text-center mb-8">DaisyUI + GSAP + Nuxt</h1>
+<template>  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold text-center mb-8">{{ t("homepage.title") }}</h1>
 
     <!-- Hero Section -->
     <div class="hero bg-base-200 rounded-lg my-4">
       <div class="hero-content text-center">
         <div class="max-w-md">
-          <h2 class="text-3xl font-bold">Welcome to Your Project</h2>
+          <h2 class="text-3xl font-bold">{{ t("homepage.hero.title") }}</h2>
           <p class="py-6">
-            This template includes DaisyUI, GSAP, and other integrations to help
-            you build amazing user experiences.
+            {{ t("homepage.hero.description") }}
           </p>
-          <button class="btn btn-primary">Get Started</button>
+          <button class="btn btn-primary">{{ t("homepage.hero.button") }}</button>
         </div>
       </div>
     </div>
 
     <!-- Component Showcase -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-      <!-- Card 1 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">      <!-- Card 1 -->
       <div class="card bg-base-100 shadow-xl">
         <div class="card-body">
-          <h2 class="card-title">DaisyUI Components</h2>
+          <h2 class="card-title">{{ t("homepage.cards.daisyui.title") }}</h2>
           <p>
-            DaisyUI provides beautiful components built on top of TailwindCSS.
+            {{ t("homepage.cards.daisyui.description") }}
           </p>
           <div class="card-actions justify-end">
-            <button class="btn btn-primary">Learn More</button>
+            <button class="btn btn-primary">{{ t("homepage.cards.daisyui.button") }}</button>
           </div>
         </div>
       </div>
@@ -34,13 +31,12 @@
       <!-- Card 2 -->
       <div class="card bg-base-100 shadow-xl">
         <div class="card-body">
-          <h2 class="card-title">GSAP Animations</h2>
+          <h2 class="card-title">{{ t("homepage.cards.gsap.title") }}</h2>
           <p>
-            Create smooth, professional animations with the GreenSock Animation
-            Platform.
+            {{ t("homepage.cards.gsap.description") }}
           </p>
           <div class="card-actions justify-end">
-            <button class="btn btn-secondary">Explore</button>
+            <button class="btn btn-secondary">{{ t("homepage.cards.gsap.button") }}</button>
           </div>
         </div>
       </div>
@@ -48,27 +44,25 @@
       <!-- Card 3 -->
       <div class="card bg-base-100 shadow-xl">
         <div class="card-body">
-          <h2 class="card-title">Nuxt 3 Features</h2>
+          <h2 class="card-title">{{ t("homepage.cards.nuxt.title") }}</h2>
           <p>
-            Take advantage of all the powerful features of Nuxt 3 framework.
+            {{ t("homepage.cards.nuxt.description") }}
           </p>
           <div class="card-actions justify-end">
-            <button class="btn btn-accent">Discover</button>
+            <button class="btn btn-accent">{{ t("homepage.cards.nuxt.button") }}</button>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Alert component -->
+    </div>    <!-- Alert component -->
     <div class="alert alert-info my-8">
       <Icon name="heroicons:information-circle" size="1.5em" />
-      <span>Customize your theme in the tailwind.config.js file!</span>
+      <span>{{ t("homepage.alert.theme") }}</span>
     </div>
 
     <!-- Progress and Rating -->
     <div class="flex flex-col md:flex-row gap-6 my-8">
       <div class="flex-1">
-        <h3 class="text-xl font-semibold mb-4">Progress Indicators</h3>
+        <h3 class="text-xl font-semibold mb-4">{{ t("homepage.progress.title") }}</h3>
         <progress
           class="progress progress-primary w-full mb-2"
           value="40"
@@ -86,7 +80,7 @@
         ></progress>
       </div>
       <div class="flex-1">
-        <h3 class="text-xl font-semibold mb-4">Rating Component</h3>
+        <h3 class="text-xl font-semibold mb-4">{{ t("homepage.rating.title") }}</h3>
         <div class="rating">
           <input
             type="radio"

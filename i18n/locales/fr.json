@@ -1,6 +1,6 @@
 {
   "hello": "Bonjour",
-  "welcome": "Bienvenue sur notre site !",
+  "welcome": "Bienvenue sur ton site !",
   "login": {
     "title": "Connexion",
     "email": "Adresse e-mail",
@@ -11,6 +11,7 @@
     "no_account": "Vous n'avez pas de compte ?"
   },
   "signup": "S'inscrire",
+  "sign_in": "Se connecter",
   "sign_out": "Se déconnecter",
   "nav": {
     "home": "Accueil",
@@ -20,6 +21,53 @@
   },
   "language": {
     "french": "Français",
-    "english": "Anglais"
+    "english": "Anglais",
+    "current": "Langue"
+  },
+  "register": {
+    "title": "Inscription",
+    "display_name": "Nom d'utilisateur",
+    "email": "Adresse e-mail",
+    "password": "Mot de passe",
+    "signup": "S'inscrire"
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "welcome": "Bienvenue sur votre tableau de bord"
+  },
+  "copyright": "Copyright © {year} - Tous droits réservés",
+  "homepage": {
+    "title": "DaisyUI + GSAP + Nuxt",
+    "hero": {
+      "title": "Bienvenue sur votre projet",
+      "description": "Ce modèle inclut DaisyUI, GSAP et d'autres intégrations pour vous aider à créer des expériences utilisateur exceptionnelles.",
+      "button": "Commencer"
+    },
+    "cards": {
+      "daisyui": {
+        "title": "Composants DaisyUI",
+        "description": "DaisyUI fournit de magnifiques composants construits sur TailwindCSS.",
+        "button": "En savoir plus"
+      },
+      "gsap": {
+        "title": "Animations GSAP",
+        "description": "Créez des animations fluides et professionnelles avec la plateforme d'animation GreenSock.",
+        "button": "Explorer"
+      },
+      "nuxt": {
+        "title": "Fonctionnalités Nuxt 3",
+        "description": "Profitez de toutes les fonctionnalités puissantes du framework Nuxt 3.",
+        "button": "Découvrir"
+      }
+    },
+    "alert": {
+      "theme": "Personnalisez votre thème dans le fichier tailwind.config.js !"
+    },
+    "progress": {
+      "title": "Indicateurs de progression"
+    },
+    "rating": {
+      "title": "Composant d'évaluation"
+    }
   }
 }

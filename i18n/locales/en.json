@@ -1,6 +1,6 @@
 {
   "hello": "Hello",
-  "welcome": "Welcome to our website!",
+  "welcome": "Welcome to your website!",
   "login": {
     "title": "Login",
     "email": "Email address",
@@ -11,6 +11,7 @@
     "no_account": "Don't have an account?"
   },
   "signup": "Sign up",
+  "sign_in": "Sign in",
   "sign_out": "Sign out",
   "nav": {
     "home": "Home",
@@ -20,6 +21,53 @@
   },
   "language": {
     "french": "French",
-    "english": "English"
+    "english": "English",
+    "current": "Language"
+  },
+  "register": {
+    "title": "Register",
+    "display_name": "Username",
+    "email": "Email address",
+    "password": "Password",
+    "signup": "Sign up"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome to your dashboard"
+  },
+  "copyright": "Copyright © {year} - All rights reserved",
+  "homepage": {
+    "title": "DaisyUI + GSAP + Nuxt",
+    "hero": {
+      "title": "Welcome to Your Project",
+      "description": "This template includes DaisyUI, GSAP, and other integrations to help you build amazing user experiences.",
+      "button": "Get Started"
+    },
+    "cards": {
+      "daisyui": {
+        "title": "DaisyUI Components",
+        "description": "DaisyUI provides beautiful components built on top of TailwindCSS.",
+        "button": "Learn More"
+      },
+      "gsap": {
+        "title": "GSAP Animations",
+        "description": "Create smooth, professional animations with the GreenSock Animation Platform.",
+        "button": "Explore"
+      },
+      "nuxt": {
+        "title": "Nuxt 3 Features",
+        "description": "Take advantage of all the powerful features of Nuxt 3 framework.",
+        "button": "Discover"
+      }
+    },
+    "alert": {
+      "theme": "Customize your theme in the tailwind.config.js file!"
+    },
+    "progress": {
+      "title": "Progress Indicators"
+    },
+    "rating": {
+      "title": "Rating Component"
+    }
   }
 }

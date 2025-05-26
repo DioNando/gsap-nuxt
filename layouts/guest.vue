@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-base-100 flex flex-col">
+  <div class="min-h-screen flex flex-col">
     <header class="navbar bg-base-200 sticky top-0 z-50">
       <div class="navbar-start">
         <ApplicationLogo :size="2" />
@@ -18,12 +18,12 @@
         </button>
       </div>
     </header>
-    <main class="flex-grow">
+    <main class="flex-1 bg-gray-200 flex flex-col item-center justify-center">
       <slot />
     </main>
     <footer class="footer footer-center p-4 bg-base-300 text-base-content">
       <aside>
-        <p>Copyright © {{ new Date().getFullYear() }} - All rights reserved</p>
+        <p>{{ t("copyright", { year: new Date().getFullYear() }) }}</p>
       </aside>
     </footer>
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-base-100 flex flex-col">
+  <div class="min-h-screen flex flex-col">
     <header class="navbar bg-base-200 sticky top-0 z-50">
       <div class="navbar-start">
         <div class="dropdown">
@@ -14,8 +14,12 @@
             tabindex="0"
             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li><NuxtLink to="/">Home</NuxtLink></li>
-            <li><NuxtLink to="/login">Login</NuxtLink></li>
+            <li>
+              <NuxtLink to="/">{{ t("nav.home") }}</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/login">{{ t("nav.login") }}</NuxtLink>
+            </li>
           </ul>
         </div>
         <ApplicationLogo :size="2" />
@@ -30,12 +34,12 @@
         </button>
       </div>
     </header>
-    <main class="flex-grow">
+    <main class="flex-1 bg-gray-200">
       <slot />
     </main>
     <footer class="footer footer-center p-4 bg-base-300 text-base-content">
       <aside>
-        <p>Copyright © {{ new Date().getFullYear() }} - All rights reserved</p>
+        <p>{{ t("copyright", { year: new Date().getFullYear() }) }}</p>
       </aside>
     </footer>
   </div>

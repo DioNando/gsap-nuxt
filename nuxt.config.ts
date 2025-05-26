@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@nuxtjs/google-fonts",
     "@nuxtjs/supabase",
+    "nuxt-particles",
   ],
   vite: {
     plugins: [tailwindcss()],
@@ -19,7 +20,9 @@ export default defineNuxtConfig({
   css: ["@/assets/scss/style.scss", "@/assets/css/style.css"],
   runtimeConfig: {
     public: {
+      applicationName: process.env.APPLICATION_NAME,
       baseUrl: process.env.BASE_URL,
+      emojisApiUrl: process.env.EMOJIS_API_URL,
     },
   },
   i18n: {

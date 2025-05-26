@@ -1,0 +1,22 @@
+[
+  {
+    "text": "+212 6 14 63 12 25",
+    "icon": "mdi-whatsapp",
+    "to": "https://wa.me/212614631225"
+  },
+  {
+    "text": "mahefa.fernando@gmail.com",
+    "icon": "mdi-email",
+    "to": "mailto:mahefa.fernando@gmail.com"
+  },
+  {
+    "text": "David Mahefa",
+    "icon": "mdi-linkedin",
+    "to": "https://www.linkedin.com/in/david-mahefa/"
+  },
+  {
+    "text": "@DioNando",
+    "icon": "mdi-github",
+    "to": "https://github.com/DioNando"
+  }
+]
