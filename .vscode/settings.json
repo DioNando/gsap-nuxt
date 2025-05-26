@@ -1,0 +1,14 @@
+{
+  "commentTranslate.multiLineMerge": true,
+  "github.copilot.chat.codeGeneration.instructions": [
+    {
+      "file": "./.vscode/daisyui.md"
+    }
+  ],
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "Use conventional commit message format. Add a lot of emojis to. Use french language."
+    }
+  ],
+  "postman.settings.dotenv-detection-notification-visibility": false
+}

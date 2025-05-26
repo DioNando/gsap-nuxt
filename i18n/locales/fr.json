@@ -1,0 +1,25 @@
+{
+  "hello": "Bonjour",
+  "welcome": "Bienvenue sur notre site !",
+  "login": {
+    "title": "Connexion",
+    "email": "Adresse e-mail",
+    "password": "Mot de passe",
+    "submit": "Se connecter",
+    "signin_with_email": "Se connecter avec l'e-mail",
+    "forgot_password": "Mot de passe oublié ?",
+    "no_account": "Vous n'avez pas de compte ?"
+  },
+  "signup": "S'inscrire",
+  "sign_out": "Se déconnecter",
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "contact": "Contact",
+    "login": "Connexion"
+  },
+  "language": {
+    "french": "Français",
+    "english": "Anglais"
+  }
+}

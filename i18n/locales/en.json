@@ -1,0 +1,25 @@
+{
+  "hello": "Hello",
+  "welcome": "Welcome to our website!",
+  "login": {
+    "title": "Login",
+    "email": "Email address",
+    "password": "Password",
+    "submit": "Login",
+    "signin_with_email": "Sign in with email",
+    "forgot_password": "Forgot password?",
+    "no_account": "Don't have an account?"
+  },
+  "signup": "Sign up",
+  "sign_out": "Sign out",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Login"
+  },
+  "language": {
+    "french": "French",
+    "english": "English"
+  }
+}

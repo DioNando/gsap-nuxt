@@ -1,0 +1,32 @@
+// https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from "@tailwindcss/vite";
+
+export default defineNuxtConfig({
+  compatibilityDate: "2025-05-15",
+  devtools: { enabled: true },
+  modules: [
+    "@hypernym/nuxt-gsap",
+    "@nuxtjs/i18n",
+    "@nuxt/icon",
+    "@nuxt/image",
+    "@pinia/nuxt",
+    "@nuxtjs/google-fonts",
+    "@nuxtjs/supabase",
+  ],
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  css: ["@/assets/scss/style.scss", "@/assets/css/style.css"],
+  runtimeConfig: {
+    public: {
+      baseUrl: process.env.BASE_URL,
+    },
+  },
+  i18n: {
+    defaultLocale: "fr",
+    locales: [
+      { code: "en", language: "en-US", file: "en.json", name: "English" },
+      { code: "fr", language: "fr-FR", file: "fr.json", name: "Français" },
+    ],
+  },
+});
