@@ -3,7 +3,7 @@
     <div
       tabindex="0"
       role="button"
-      class="btn btn-outline btn-square text-gray-400"
+      class="btn btn-outline btn-sm btn-square text-gray-400"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
