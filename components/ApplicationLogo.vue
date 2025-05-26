@@ -1,18 +1,17 @@
 <template>
   <div>
-    <NuxtLink to="/" class="btn btn-ghost text-xl">
-      <!-- <img
-        src="/logo.svg"
-        alt="GSAP Nuxt Logo"
-        class="h-8 w-8 inline-block mr-2"
-      /> -->
-      GSAP Nuxt
+    <NuxtLink to="/" class="text-xl p-2 flex items-center gap-2">
+      <Icon
+        name="majesticons:flower-2"
+        class="logo text-primary"
+        :size="props.size + 'rem'"
+      />
     </NuxtLink>
   </div>
 </template>
 
 <script setup lang="ts">
-defineProps<{
-  size?: string;
+const props = defineProps<{
+  size?: number;
 }>();
 </script>

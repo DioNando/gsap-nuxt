@@ -29,4 +29,7 @@ export default defineNuxtConfig({
       { code: "fr", language: "fr-FR", file: "fr.json", name: "Français" },
     ],
   },
+  supabase: {
+    redirect: false,
+  },
 });

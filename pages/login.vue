@@ -1,21 +1,23 @@
 <template>
   <div class="flex flex-col gap-4 items-center justify-center h-screen">
-    <Icon name="uil:github" class="logo text-primary" size="5rem" />
+    <ApplicationLogo :size="5" />
     <h1 class="text-2xl">{{ t("welcome") }}</h1>
-    <div class="flex flex-col gap-4 w-full max-w-md">
-      <fieldset class="fieldset">
-        <legend class="fieldset-legend">Email</legend>
-        <input type="email" v-model="email" class="input w-full" />
-        <p class="label text-error">{{ t(errorMsg) }}</p>
-      </fieldset>
-      <fieldset class="fieldset">
-        <legend class="fieldset-legend">Password</legend>
-        <input type="password" v-model="password" class="input w-full" />
-      </fieldset>
+    <section class="flex flex-col gap-6 w-full max-w-md">
+      <div class="flex flex-col w-full">
+        <fieldset class="fieldset">
+          <legend class="fieldset-legend">Email</legend>
+          <input type="email" v-model="email" class="input w-full" />
+          <p class="label text-error">{{ t(errorMsg) }}</p>
+        </fieldset>
+        <fieldset class="fieldset">
+          <legend class="fieldset-legend">Password</legend>
+          <input type="password" v-model="password" class="input w-full" />
+        </fieldset>
+      </div>
       <button @click="signIn" class="btn btn-primary">
         {{ t("login.signin_with_email") }}
       </button>
-    </div>
+    </section>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen bg-base-100 flex flex-col">
-    <div class="navbar bg-base-200">
+    <header class="navbar bg-base-200 sticky top-0 z-50">
       <div class="navbar-start">
         <div class="dropdown">
           <div
@@ -18,34 +18,30 @@
             <li><NuxtLink to="/login">Login</NuxtLink></li>
           </ul>
         </div>
-        <ApplicationLogo />
+        <ApplicationLogo :size="2" />
       </div>
       <div class="navbar-center hidden lg:flex"></div>
       <div class="navbar-end flex items-center gap-3">
         <LanguageSwitcher />
-        <ThemeToggler />
+        <!-- <ThemeToggler /> -->
         <button class="btn btn-ghost" @click="signOut">
           <Icon name="majesticons:logout-half-circle" size="1rem" />
           {{ t("sign_out") }}
         </button>
       </div>
-    </div>
+    </header>
     <main class="flex-grow">
       <slot />
     </main>
     <footer class="footer footer-center p-4 bg-base-300 text-base-content">
       <aside>
-        <p>Copyright © 2025 - All rights reserved</p>
+        <p>Copyright © {{ new Date().getFullYear() }} - All rights reserved</p>
       </aside>
     </footer>
   </div>
 </template>
 
 <script setup lang="ts">
-definePageMeta({
-  middleware: ["auth"],
-});
-
 const { locales, t, setLocale } = useI18n();
 
 const supabase = useSupabaseClient();

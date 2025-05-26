@@ -1,10 +1,14 @@
 <template>
   <div class="dropdown dropdown-end">
-    <div tabindex="0" role="button" class="btn btn-ghost rounded-full text-primary">
+    <div
+      tabindex="0"
+      role="button"
+      class="btn btn-ghost rounded-full text-primary"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="1.5rem"
-        height="1.5rem"
+        width="1rem"
+        height="1rem"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
