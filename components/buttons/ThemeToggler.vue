@@ -1,6 +1,6 @@
 <template>
-  <button class="btn btn-square btn-ghost" @click="toggleTheme">
-    <Icon name="majesticons:sun" size="1rem" />
+  <button class="btn btn-circle btn-sm btn-ghost" @click="toggleTheme">
+    <Icon :name="isDark ? 'majesticons:sun' : 'majesticons:moon'" size="1rem" />
   </button>
 </template>
 

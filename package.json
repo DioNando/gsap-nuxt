@@ -16,9 +16,9 @@
     "@nuxtjs/supabase": "^1.5.1",
     "@pinia/nuxt": "^0.11.0",
     "@tailwindcss/vite": "^4.1.7",
-    "nuxt-particles": "^0.1.5",
     "daisyui": "^5.0.35",
     "nuxt": "^3.17.3",
+    "nuxt-particles": "^0.1.5",
     "pinia": "^3.0.2",
     "sass": "^1.89.0",
     "tailwindcss": "^4.1.7",
@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@hypernym/nuxt-gsap": "^2.4.3",
-    "@nuxt/icon": "^1.13.0"
+    "@nuxt/icon": "^1.13.0",
+    "supabase": "^2.23.4"
   }
 }

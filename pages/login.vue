@@ -3,16 +3,6 @@
     <article
       class="text-center relative py-4 col-span-2 flex items-center justify-center"
     >
-      <NuxtParticles
-        id="tsparticles"
-        :options="particles"
-        @load="onLoad"
-      ></NuxtParticles>
-      <NuxtParticles
-        id="alt-tsparticles"
-        :options="alt_particles"
-        @load="onLoad"
-      ></NuxtParticles>
       <div class="flex flex-col items-center justify-center">
         <h1 class="text-accent text-2xl lg:text-5xl font-bold">
           {{ t("welcome") }}
@@ -53,8 +43,8 @@ const { t } = useI18n();
 </script>
 
 <style lang="scss" scoped>
-#tsparticles,
-#alt-tsparticles {
+#tsparticles-5,
+#tsparticles-6 {
   position: absolute;
   height: 100%;
   width: 100%;

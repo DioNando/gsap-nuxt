@@ -2,7 +2,7 @@
   <div>
     <NuxtLink to="/" class="text-xl p-2 flex items-center gap-2">
       <Icon
-        name="majesticons:flower-2"
+        name="majesticons:globe-earth"
         class="logo text-secondary"
         :size="props.size + 'rem'"
       />

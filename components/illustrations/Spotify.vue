@@ -165,9 +165,26 @@
   </div>
 </template>
 
+<script setup lang="ts">
+const { $gsap } = useNuxtApp();
+
+onMounted(() => {
+  if (process.client) {
+    $gsap.from(".cls-1", {
+      x: 50,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "back.out(1.7)",
+      delay: 0.5,
+    });
+  }
+});
+</script>
+
 <style lang="scss" scoped>
 .cls-1 {
-    fill: var(--color-primary-content);
-    stroke-width: 0px;
+  fill: var(--color-primary-content);
+  stroke-width: 0px;
 }
 </style>

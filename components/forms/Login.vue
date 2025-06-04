@@ -4,7 +4,7 @@
       <fieldset class="fieldset">
         <legend class="fieldset-legend">{{ t("login.email") }}</legend>
         <div class="input w-full">
-          <Icon name="majesticons:flower-2" class="h-[1em] opacity-50" />
+          <Icon name="majesticons:user" class="h-[1em] opacity-50" />
           <input type="email" v-model="email" />
         </div>
         <p class="label text-error">{{ t(errorMsg) }}</p>

@@ -1,31 +1,6 @@
 <template>
-  <div class="container mx-auto px-4">
-    <!-- <h1 class="text-4xl font-bold text-center mb-8">
-      {{ t("homepage.title") }}
-    </h1> -->
+  <div class="container mx-auto px-4 py-4 lg:py-8">
     <UiHero />
-    <a
-      href="https://open.spotify.com/intl-fr/track/2eAvDnpXP5W0cVtiI0PUxV?si=e2d34aa3a65e4e9d"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="block"
-    >
-      <div
-        class="relative card shadow-lg rounded-box w-full bg-base-100 overflow-hidden"
-      >
-        <IllustrationsSpotify />
-        <NuxtParticles
-          id="tsparticles"
-          :options="particles"
-          @load="onLoad"
-        ></NuxtParticles>
-        <NuxtParticles
-          id="alt-tsparticles"
-          :options="alt_particles"
-          @load="onLoad"
-        ></NuxtParticles>
-      </div>
-    </a>
     <UiCaroussel />
   </div>
 </template>
@@ -36,22 +11,4 @@ definePageMeta({
 });
 
 const { t } = useI18n();
-
-import alt_particles from "~/data/alt-particlesjs-config.json";
-import particles from "~/data/particlesjs-config.json";
-
-const onLoad = (container: Container) => {
-  container.play();
-};
 </script>
-
-<style lang="scss" scoped>
-#tsparticles,
-#alt-tsparticles {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  // scale: 1.2;
-  border-radius: 2rem;
-}
-</style>

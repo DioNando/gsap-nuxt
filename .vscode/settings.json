@@ -1,5 +1,27 @@
 {
+  "[typescript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
   "commentTranslate.multiLineMerge": true,
+  "deno.enablePaths": [
+    "supabase/functions"
+  ],
+  "deno.lint": true,
+  "deno.unstable": [
+    "bare-node-builtins",
+    "byonm",
+    "sloppy-imports",
+    "unsafe-proto",
+    "webgpu",
+    "broadcast-channel",
+    "worker-options",
+    "cron",
+    "kv",
+    "ffi",
+    "fs",
+    "http",
+    "net"
+  ],
   "github.copilot.chat.codeGeneration.instructions": [
     {
       "file": "./.vscode/daisyui.md"
@@ -7,7 +29,7 @@
   ],
   "github.copilot.chat.commitMessageGeneration.instructions": [
     {
-      "text": "Use conventional commit message format. Add a lot of emojis to. Use french language."
+      "text": "Use conventional commit message format. Add a lot of emojis too. Use french language."
     }
   ],
   "postman.settings.dotenv-detection-notification-visibility": false

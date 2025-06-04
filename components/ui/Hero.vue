@@ -1,6 +1,6 @@
 <template>
   <!-- Hero Section -->
-  <div class="hero bg-base-200 rounded-lg my-4">
+  <div class="hero bg-base-200 rounded-lg mb-4">
     <div class="hero-content text-center">
       <div class="max-w-md">
         <h2 class="text-3xl font-bold">{{ t("homepage.hero.title") }}</h2>
